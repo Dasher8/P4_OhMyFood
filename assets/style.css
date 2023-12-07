@@ -1,5 +1,25 @@
-body {
-  background: red;
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px; /*delets margins on the right and on the left*/
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100% !important;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0px 0px 0px;
+    margin: 0px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+  }
+  .image-container img {
+    width: 35%;
+    height: 30px;
+    box-sizing: border-box;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
