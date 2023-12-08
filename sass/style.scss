@@ -5,7 +5,13 @@
 }
 
 
-@media (max-width: 768px) {
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color:  #99E2D0;
+$background-color: #F6F6F6;
+$footer-color: #353535;
+$icon-color: #7E7E7E;
+
 
     .image-container {
         width: 100%;
@@ -18,7 +24,7 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         box-sizing: border-box;
         position: relative;
-        z-index: 2;
+        /*z-index: 2;*/
         
 
         img {
@@ -34,11 +40,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        padding: 20px;
         background: rgba(234, 234, 234, 1);
-        position: absolute;
+       /* position: absolute;*/
         box-sizing: border-box;
-        z-index: 1;
+        /*z-index: 1;*/
     
 
             .paris {
@@ -53,5 +59,53 @@
                 }
          }
     }
-   
-}
+
+    .headline {
+        width: 100%;
+        display: flex;
+        padding: 30px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background: $background-color;
+        text-align: center;
+        
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .explore-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 45px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            /*background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);*/
+            background: linear-gradient(5deg, #9356DC -11.44%, #FF79DA 123.93%);
+            box-sizing: border-box;
+        }
+
+    }
+ 
+
+
+
+
+
+
