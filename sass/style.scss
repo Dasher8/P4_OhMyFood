@@ -102,10 +102,102 @@ $icon-color: #7E7E7E;
         }
 
     }
- 
 
+    .functioning {
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+        &__steps {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 40px 0px 30px 20px;
+        }
+
+    &__steps p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .functioning__steps i {
+        color: $icon-color;
+        padding-right: 15px;
+    }
+
+    &__first-step, &__second-step, &__third-step {
+        width: 80%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+
+    }
+
+    .functioning__first-step::before {
+        content: '1';
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background:  $primary-color;
+        border: 1px solid $primary-color;
+        font-size: 14px;
+        font-weight: 500; 
+        border-radius: 50%;
+        box-sizing: border-box;
+        left: -10px;
+    }
+
+    .functioning__second-step::before {
+        content: '2';
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background:  $primary-color;
+        border: 1px solid $primary-color;
+        font-size: 14px;
+        font-weight: 500; 
+        border-radius: 50%;
+        box-sizing: border-box;
+        left: -10px;
+    }
+
+    .functioning__third-step::before {
+        content: '3';
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background:  $primary-color;
+        border: 1px solid $primary-color;
+        font-size: 14px;
+        font-weight: 500; 
+        border-radius: 50%;
+        box-sizing: border-box;
+        left: -10px;
+    }
+
+}
 
 
 
