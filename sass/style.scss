@@ -202,5 +202,115 @@ $icon-color: #7E7E7E;
 
 }
 
+.restaurants {
+    background: $background-color;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    padding-bottom: 60px;
+
+
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 50px 0px 10px 20px;
+        }
+}
+.restaurants__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    .card {
+        width: 90%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 15px;
+        box-sizing: border-box;
+        margin: 10px 0px 10px 0px;
+        position: relative;
+
+            &__link {
+                text-decoration: none;
+            }
+
+            .tag {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+                width: 80px;
+                height: 29px;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 14px;
+                font-weight: 500;
+                background: $tertiary-color;
+                color: #008766;
+            }
+        
+        
+            .img-container {
+                overflow: hidden;
+            }
+
+            .card-content {
+                display: flex;
+                flex-direction: row;
+
+                    .card-txt {
+                        padding: 15px;
+                        position: relative;
+                        color: black;
+
+                            &__title {
+                                font-size: 18px;
+                                font-weight: 700;
+                                margin-bottom: 5px;
+                            }
+
+                            &__subtitle {
+                                font-size: 17px;
+                                font-weight: 300;
+                            }
+
+                    }
+
+                        .card-like {
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            color: black;
+                            right: 30px;
+                            bottom: 30px;
+                            font-size: larger;
+                        }
+
+            }
+
+    }
+
+.img-container img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+
+}
+
+
+
+
+
 
 
