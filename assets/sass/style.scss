@@ -1,22 +1,12 @@
 /* Nomenclature des classes BEM - SMACCS :https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html */
 
 
-* {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px; /*delets margins on the right and on the left*/
-       
-}
 
-@import '../assets/scss/utils/_variables.scss';
 
-/*
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color:  #99E2D0;
-$background-color: #F6F6F6;
-$footer-color: #353535;
-$icon-color: #7E7E7E;
-*/
+@import '../scss/utils/_variables.scss';
+@import '../scss/base/base';
+@import '../scss/layouts/footer';
+
 
 /*
 .className {
@@ -47,6 +37,7 @@ $icon-color: #7E7E7E;
 
 */
 
+
     .image-container {
         width: 100%;
         height: 63px;
@@ -76,22 +67,23 @@ $icon-color: #7E7E7E;
         align-items: center;
         padding: 20px;
         background: rgba(234, 234, 234, 1);
-       /* position: absolute;*/
         box-sizing: border-box;
-        /*z-index: 1;*/
-    
 
-            .paris {
-            text-decoration: none;
+        .fa-location-dot {
+            font-size: x-small;
+            margin-right: 15px;
+            color: #353535;
+        }
+
+        &__name {
+            border: none;
+            outline: none;
             color: #353535;
             font-size: 14px;
             font-weight: 500;
-
-                .fa-location-dot {
-                    font-size: x-small;
-                    margin-right: 10px;
-                }
-         }
+            background: none;
+            padding: 0;
+        }
     }
 
     .headline {
@@ -114,6 +106,16 @@ $icon-color: #7E7E7E;
             margin-top: 10px;
             font-size: 18px;
             font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .headline__title--space, 
+        .headline__subtitle--space {
+            display: block;
         }
 
         .explore-button {
@@ -340,8 +342,11 @@ $icon-color: #7E7E7E;
 }
 }
 
-.footer {
-    background: $footer-color;
+
+
+/* .footer {
+   
+   background: $footer-color;
 
     a {
         text-decoration: none;
@@ -382,7 +387,7 @@ $icon-color: #7E7E7E;
             color: white;
             font-weight: 400;
         }
-}
+}*/
 
 
 
