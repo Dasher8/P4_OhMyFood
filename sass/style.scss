@@ -1,17 +1,51 @@
+/* Nomenclature des classes BEM - SMACCS :https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html */
+
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0px; /*delets margins on the right and on the left*/
        
 }
 
+@import '../assets/scss/utils/_variables.scss';
 
+/*
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color:  #99E2D0;
 $background-color: #F6F6F6;
 $footer-color: #353535;
 $icon-color: #7E7E7E;
+*/
 
+/*
+.className {
+    width / largeur
+    min-width / min-height
+    
+    display: flex
+    align-items: inital;
+    justify-content:
+
+
+    position
+    margin
+    padding
+    ..
+
+    color
+    background
+    font-size
+    font-weight
+    letter-spacing
+    ..
+
+    exotique (box-shadow, box-sizing, opacity, filter, ...)
+
+    animation
+}
+
+*/
 
     .image-container {
         width: 100%;
@@ -19,7 +53,7 @@ $icon-color: #7E7E7E;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 14px 0px 0px 0px;
+        padding: 14px 0 0 0;
         margin: 0px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         box-sizing: border-box;
