@@ -1,8 +1,43 @@
 .footer {
     background: $footer-color;
 
+    &__list {
+         text-decoration: none;
+         list-style: none;
+         color: white;
+         padding: 0px 0px 20px 20px;
+         font-size: 16px;
+         font-weight: 500;
+
+         a {
+            text-decoration: none;
+            color: white;
+        }
+
+         li {
+            padding-bottom: 10px;
+         }
+
+         .fa-utensils {
+            margin-right: 10px;
+            font-size: x-small;
+         }
+         .fa-handshake-angle {
+            margin-right: 9px;
+            font-size: xx-small;
+         }
+
+     } 
+
+     .mentions, .contact li {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+
     a {
         text-decoration: none;
+        color: white;
     }
     
     .footer-logo h3 {
@@ -12,32 +47,5 @@
         color: white;
         padding: 20px;
     }
-        &__list {
-            text-decoration: none;
-            list-style: none;
-             color: white;
-             padding: 0px 0px 20px 20px;
-             font-size: 16px;
-             font-weight: 500;
-
-             li {
-                padding-bottom: 10px;
-             }
-
-             .fa-utensils {
-                margin-right: 10px;
-                font-size: x-small;
-             }
-             .fa-handshake-angle {
-                margin-right: 9px;
-                font-size: xx-small;
-             }
-
-         } 
-
-         .mentions, .contact li {
-            text-decoration: none;
-            color: white;
-            font-weight: 400;
-        }
+       
 }
