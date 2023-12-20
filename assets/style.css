@@ -11,27 +11,21 @@ ul, ol {
 
 .footer {
   background: #353535;
-}
-.footer a {
-  text-decoration: none;
-}
-.footer .footer-logo h3 {
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Shrikhand";
-  color: white;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .footer__list {
-  text-decoration: none;
   list-style: none;
-  color: white;
   padding: 0px 0px 20px 20px;
   font-size: 16px;
   font-weight: 500;
+  position: absolute;
 }
-.footer__list li {
+.footer__list .footer__list a {
   padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
 }
 .footer__list .fa-utensils {
   margin-right: 10px;
@@ -41,10 +35,28 @@ ul, ol {
   margin-right: 9px;
   font-size: xx-small;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-logo {
+  position: relative;
+}
+.footer .footer-logo h3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Shrikhand";
+  color: white;
+  padding: 20px;
+}
 .footer .mentions, .footer .contact li {
   text-decoration: none;
   color: white;
   font-weight: 400;
+}
+.footer .footer__list a {
+  text-decoration: none;
+  color: white;
 }
 
 /*
@@ -345,6 +357,7 @@ ul, ol {
 @media (min-width: 768px) {
   .headline__title {
     font-size: 40px;
+    margin-bottom: 10px;
   }
   .headline__title--space, .headline__subtitle--space {
     display: inline;
@@ -352,6 +365,7 @@ ul, ol {
   .headline .explore-button {
     width: 218px;
     height: 50px;
+    margin-top: 30px;
   }
   .functioning__title {
     padding: 50px 130px 0;
@@ -368,6 +382,28 @@ ul, ol {
     padding-left: 35px;
     margin: 20px;
     box-sizing: border-box;
+  }
+  .restaurants__cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .restaurants__cards .card {
+    width: calc(40% - 20px);
+    box-sizing: border-box;
+    margin: 0 40px 20px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__list li {
+    margin-right: 20px;
   }
 }
 /* .footer {
