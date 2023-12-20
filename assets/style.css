@@ -12,6 +12,16 @@ ul, ol {
 .footer {
   background: #353535;
 }
+.footer a {
+  text-decoration: none;
+}
+.footer .footer-logo h3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Shrikhand";
+  color: white;
+  padding: 20px;
+}
 .footer__list {
   text-decoration: none;
   list-style: none;
@@ -19,10 +29,6 @@ ul, ol {
   padding: 0px 0px 20px 20px;
   font-size: 16px;
   font-weight: 500;
-}
-.footer__list a {
-  text-decoration: none;
-  color: white;
 }
 .footer__list li {
   padding-bottom: 10px;
@@ -39,17 +45,6 @@ ul, ol {
   text-decoration: none;
   color: white;
   font-weight: 400;
-}
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-.footer .footer-logo h3 {
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Shrikhand";
-  color: white;
-  padding: 20px;
 }
 
 /*
@@ -328,7 +323,9 @@ ul, ol {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants__cards .card .card-content .card-like {
+.restaurants__cards .card .card-content .card-like img {
+  width: 22px;
+  height: 21px;
   display: flex;
   align-items: center;
   position: absolute;
