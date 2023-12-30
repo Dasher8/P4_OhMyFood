@@ -98,8 +98,8 @@ ul, ol {
   width: 100%;
   height: 15px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   background: rgb(234, 234, 234);
   box-sizing: border-box;
@@ -383,14 +383,20 @@ ul, ol {
     margin: 20px;
     box-sizing: border-box;
   }
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .restaurants__title {
     margin: 0;
     padding: 40px 0 30px 130px;
   }
   .restaurants__cards {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    justify-content: center;
     box-sizing: border-box;
   }
   .restaurants__cards .card {
