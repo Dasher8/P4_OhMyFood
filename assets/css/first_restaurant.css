@@ -3,9 +3,27 @@
   margin: 0px; /*delets margins on the right and on the left*/
 }
 
-.image-container {
-  width: 90%;
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
   height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.header__arrow {
+  padding-left: 25px;
+  font-size: large;
+  color: #353535;
+}
+.header .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,22 +31,121 @@
   margin: 0;
   box-sizing: border-box;
 }
-.image-container .fa-arrow-left {
+.header .image-container .fa-arrow-left {
   color: #353535;
 }
-.image-container img {
+.header .image-container img {
   width: 100%;
   height: 30px;
   box-sizing: border-box;
 }
 
+.main-photo img {
+  width: 100%;
+  height: 275px;
+  box-sizing: border-box;
+}
+
 .menu {
-  background: #9356DC;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: #F6F6F6;
+}
+.menu__title {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 0 32px 15px;
+  gap: 50px;
+}
+.menu__title--like img {
+  width: 28px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: large;
+}
+.menu__title h1 {
+  font-size: 28px;
+  font-family: Shrikhand;
+}
+.menu__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 0 10px 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+.menu__subtitle::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: flex;
+  position: absolute;
+  margin-top: 5px;
+  background: #99E2D0;
+}
+.menu__card {
+  width: 95%;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  margin: 10px 0 20px 0px;
+  position: relative;
+}
+.menu__card--content {
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.menu__card--content .content-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.menu__card--content .content-subtitle {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu__card--content .content-price {
+  font-size: 15px;
+  font-weight: 700;
+}
+.menu .order-button {
+  width: 186px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  margin: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(5deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-sizing: border-box;
 }
 
 .footer {
   width: 100%;
-  height: 150px;
+  height: 186px;
   background: #353535;
 }
 .footer a {
@@ -38,9 +155,9 @@
 .footer__list {
   text-decoration: none;
   list-style: none;
-  padding: 0px 0px 20px 20px;
   font-size: 16px;
   font-weight: 500;
+  padding: 0 0 0 20px;
 }
 .footer__list li {
   padding-bottom: 10px;
@@ -58,8 +175,8 @@
   color: white;
   font-weight: 400;
 }
-.footer .footer-logo h3 {
-  font-size: 22px;
+.footer .footer-logo p {
+  font-size: 18px;
   font-weight: 400;
   font-family: "Shrikhand";
   color: white;
