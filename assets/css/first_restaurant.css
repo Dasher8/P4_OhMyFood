@@ -15,8 +15,11 @@
   height: 63px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 50px;
+  justify-content: center;
+}
+.header__arrow {
+  position: absolute;
+  left: 5px;
 }
 .header__arrow {
   padding-left: 25px;
@@ -134,7 +137,7 @@
   font-size: 15px;
   font-weight: 300;
 }
-.menu__card .content-price {
+.menu__card--content .content-price {
   font-size: 15px;
   font-weight: 700;
   position: absolute;
@@ -197,6 +200,86 @@
   font-family: "Shrikhand";
   color: white;
   padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-container .header {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container .header__arrow {
+    position: absolute;
+    left: 30px;
+  }
+  .main-container .image-container {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  .main-container .image-container .fa-arrow-left {
+    color: #353535;
+  }
+  .main-container .image-container img {
+    width: 100%;
+    height: 34px;
+    box-sizing: border-box;
+  }
+  .main-container .main-photo {
+    width: 100%;
+    height: 380px;
+  }
+  .main-container .main-photo img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+  }
+  .main-container .footer {
+    width: 100%;
+    height: 114px;
+  }
+  .main-container .footer__content {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 30px 0 0;
+  }
+  .main-container .footer .footer-logo h3 {
+    padding: 0;
+    font-size: 18px;
+  }
+  .main-container .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .main-container .footer__list a {
+    color: white;
+  }
+  .main-container .footer__list li {
+    margin-right: 20px;
+    padding: 0;
+  }
+  .main-container .footer__list .mentions {
+    margin-left: 30px;
+    font-weight: 400;
+  }
+  .main-container .footer__list .contact {
+    margin-right: 60px;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=first_restaurant.css.map */
