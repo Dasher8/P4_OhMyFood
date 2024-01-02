@@ -100,7 +100,7 @@ $icon-color-dark: #353535;
 
 }
 
-&__starters {
+&__starters, &__dishes, &__desserts {
     width: 100%;
     display: flex;
     align-items: flex-start;

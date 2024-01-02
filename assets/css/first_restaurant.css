@@ -77,7 +77,7 @@
   font-size: 28px;
   font-family: Shrikhand;
 }
-.menu__starters {
+.menu__starters, .menu__dishes, .menu__desserts {
   width: 100%;
   display: flex;
   align-items: flex-start;
