@@ -310,13 +310,14 @@ $icon-color-dark: #353535;
         height: 114px;
     
         &__content {
-        width: 90%;
+        width: 100%;
         height: 50px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: flex-start;
-        padding: 50px 30px 0 0;
+        padding: 80px 50px 0 0;
+        box-sizing: border-box;
         }
     
         .footer-logo h3 {
