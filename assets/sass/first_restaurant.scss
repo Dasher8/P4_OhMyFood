@@ -135,6 +135,7 @@ $icon-color-dark: #353535;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     background: white;
     border-radius: 15px;
     margin: 0px 0 10px 0px;
@@ -143,9 +144,10 @@ $icon-color-dark: #353535;
 
 
     &--content {
-        padding: 12px 15px;
+        width: 100%;
+        padding: 12px 0 15px 12px;
         display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -161,10 +163,13 @@ $icon-color-dark: #353535;
            font-weight: 300; 
         }
     
-        .content-price {
-            font-size: 15px;
-            font-weight: 700;
-        }
+    }
+    .content-price {
+        font-size: 15px;
+        font-weight: 700;
+        position: absolute;
+        right: 15px;
+        bottom: 13px;
     }
 }
 
