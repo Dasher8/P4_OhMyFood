@@ -1,0 +1,88 @@
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color:  #99E2D0;
+$background-color: #F6F6F6;
+$footer-color: #353535;
+$icon-color: #7E7E7E;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px; /*delets margins on the right and on the left*/
+       
+}
+
+.image-container {
+    width: 90%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+    .fa-arrow-left {
+        color: #353535;
+    }
+
+    img {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+    }
+}
+
+.menu {
+    background: $primary-color;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: $footer-color;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__list {
+         text-decoration: none;
+         list-style: none;
+         padding: 0px 0px 20px 20px;
+         font-size: 16px;
+         font-weight: 500;
+
+
+         li {
+            padding-bottom: 10px;
+         }
+
+         .fa-utensils {
+            margin-right: 10px;
+            font-size: x-small;
+         }
+         .fa-handshake-angle {
+            margin-right: 9px;
+            font-size: xx-small;
+         }
+
+     } 
+
+     .mentions, .contact li {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+
+    
+    .footer-logo h3 {
+        font-size: 22px;
+        font-weight: 400;
+        font-family: 'Shrikhand';
+        color: white;
+        padding: 20px;
+    }
+}
