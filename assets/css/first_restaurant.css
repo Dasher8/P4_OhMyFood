@@ -203,18 +203,18 @@
 }
 
 @media (min-width: 768px) {
-  .main-container .header {
+  .header {
     width: 100%;
     height: 63px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .main-container .header__arrow {
+  .header__arrow {
     position: absolute;
     left: 30px;
   }
-  .main-container .image-container {
+  .image-container {
     width: 100%;
     height: 380px;
     display: flex;
@@ -225,28 +225,56 @@
     object-fit: cover;
     box-sizing: border-box;
   }
-  .main-container .image-container .fa-arrow-left {
+  .image-container .fa-arrow-left {
     color: #353535;
   }
-  .main-container .image-container img {
+  .image-container img {
     width: 100%;
     height: 34px;
     box-sizing: border-box;
   }
-  .main-container .main-photo {
+  .main-photo {
     width: 100%;
     height: 380px;
   }
-  .main-container .main-photo img {
+  .main-photo img {
     width: 100%;
     height: 380px;
     object-fit: cover;
   }
-  .main-container .footer {
+  .menu {
+    width: 70%;
+  }
+  .menu__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 0 0;
+    gap: 35px;
+    box-sizing: border-box;
+  }
+  .menu__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu__starters, .menu__dishes, .menu__desserts {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 30px 0 10px 0;
+    left: 20px;
+  }
+  .footer {
     width: 100%;
     height: 114px;
   }
-  .main-container .footer__content {
+  .footer__content {
     width: 100%;
     height: 50px;
     display: flex;
@@ -256,28 +284,28 @@
     padding: 80px 50px 0 0;
     box-sizing: border-box;
   }
-  .main-container .footer .footer-logo h3 {
+  .footer .footer-logo h3 {
     padding: 0;
     font-size: 18px;
   }
-  .main-container .footer__list {
+  .footer__list {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
   }
-  .main-container .footer__list a {
+  .footer__list a {
     color: white;
   }
-  .main-container .footer__list li {
+  .footer__list li {
     margin-right: 20px;
     padding: 0;
   }
-  .main-container .footer__list .mentions {
+  .footer__list .mentions {
     margin-left: 30px;
     font-weight: 400;
   }
-  .main-container .footer__list .contact {
+  .footer__list .contact {
     margin-right: 60px;
     font-weight: 400;
   }
