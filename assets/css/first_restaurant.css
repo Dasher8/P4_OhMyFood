@@ -77,6 +77,12 @@
   font-size: 28px;
   font-family: Shrikhand;
 }
+.menu__starters {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .menu__subtitle {
   font-size: 16px;
   font-weight: 300;

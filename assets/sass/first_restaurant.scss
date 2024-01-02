@@ -99,6 +99,13 @@ $icon-color-dark: #353535;
     }
 
 }
+
+&__starters {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 &__subtitle {
     font-size: 16px;
     font-weight: 300;
