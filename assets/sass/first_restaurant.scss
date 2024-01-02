@@ -72,12 +72,13 @@ $icon-color-dark: #353535;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: -50px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background: $background-color;
     box-sizing: border-box;
     position: relative;
-    top: -50px;
+    
     
     &__content {
         width: 100%;
