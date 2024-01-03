@@ -267,7 +267,7 @@
   font-size: larger;
 }
 .restaurants__cards .card .card-like {
-  width: 22px;
+  width: 23px;
   height: 21px;
   display: flex;
   align-items: center;
@@ -287,8 +287,8 @@
   display: none;
 }
 .restaurants__cards .card .hidden-checkbox:checked + .card-like path {
-  fill: red;
-  stroke: red;
+  fill: url(#like-gradient);
+  stroke: url(#like-gradient);
 }
 .restaurants__cards .img-container img {
   width: 100%;
