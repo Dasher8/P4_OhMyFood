@@ -109,7 +109,6 @@ $icon-color: #7e7e7e;
       linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
     );
     transition: box-shadow 0.5s ease-in-out, background 0.8s ease-in-out;
-   
 
     &:hover {
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -119,7 +118,6 @@ $icon-color: #7e7e7e;
           rgba(255, 255, 255, 0.15) 100%
         ),
         linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-        
     }
   }
 }
@@ -310,6 +308,33 @@ $icon-color: #7e7e7e;
         font-size: larger;
       }
     }
+    .card-like {
+      width: 22px;
+      height: 21px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      color: black;
+      right: 30px;
+      bottom: 30px;
+      cursor: pointer;
+    }
+
+    .card-like path {
+      fill: transparent;
+      stroke-width: 2px;
+      stroke: black;
+      transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    }
+
+    .hidden-checkbox {
+      display: none;
+    }
+
+    .hidden-checkbox:checked + .card-like path {
+      fill: red;
+      stroke: red;
+    }
   }
 
   .img-container img {
@@ -385,22 +410,20 @@ $icon-color: #7e7e7e;
       height: 50px;
       margin-top: 30px;
       background: var(
-      --Button-Gradient,
-      linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-    );
-    transition: box-shadow 0.5s ease-in-out, background 0.8s ease-in-out;
-   
+        --Button-Gradient,
+        linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+      );
+      transition: box-shadow 0.5s ease-in-out, background 0.8s ease-in-out;
 
-    &:hover {
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-      background: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.15) 0%,
-          rgba(255, 255, 255, 0.15) 100%
-        ),
-        linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-        
-    }
+      &:hover {
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(255, 255, 255, 0.15) 100%
+          ),
+          linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+      }
     }
   }
 
