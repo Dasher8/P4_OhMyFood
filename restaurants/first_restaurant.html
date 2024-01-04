@@ -16,6 +16,94 @@
 </head>
 
 <body>
+
+    <!--
+    <div> => position:relative;
+        <input>
+        <label></label> => position:absolute; width: 100%; height:50px; z-index: 800
+        <div> => width: 100%; height:50px; z-index:500
+            <div></div>
+        </div>
+    </div>
+-->
+
+    <!--
+<div class="menu__card"> => overflox:hidden
+    <div class="menu__card-content">
+        <div>
+        <h3 class="content-title">Filet de bœuf aux herbes</h3>
+        <p class="content-subtitle">Accompagné de sa ribambelle de légumes</p>
+
+    </div>
+    <div> =>absolute;  translateX
+            <p class="content-price">40€</p>
+            <span class="checked">
+                <i class="fa-solid fa-circle-check fa-lg"></i>
+            </span>
+        </div>
+    </div>
+</div> 
+-->
+
+    <!--
+<input type="radio" name="entree"/>
+<input type="radio" name="entree"/>
+
+<input type="radio" name="plat" />
+<input type="radio" name="plat"/>
+-->
+    <!--
+    <style>
+        .rectangle {
+            width: 300px;
+            height: 40px;
+            border: 1px solid red;
+            position: relative;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .titi {
+            width: calc(100% - 50px);
+            height: 40px;
+            transition: ease-in-out .3s;
+        }
+
+        .titi .tutu {
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .toto {
+            width: 100px;
+            height: 40px;
+            background: green;
+            position: absolute;
+            top: 5px;
+            right: -50px;
+            transition: ease-in-out .3s;
+        }
+
+        .rectangle:hover .titi {
+            width: calc(100% - 100px);
+        }
+
+        .rectangle:hover .toto {
+            right: 0px;
+        }
+    </style>
+    <div class="rectangle">
+        <div class="titi">
+            <p class="tutu">lorem ipsum dolor set imae dolor</p>
+        </div>
+        <div class="toto"></div>
+    </div>
+
+-->
+
+
     <div class="main-container">
         <header class="header">
             <span class="header__arrow">
@@ -47,9 +135,6 @@
                         <h3 class="content-title">Fricassée d'escargots</h3>
                         <p class="content-subtitle">Au piment d'Espelette</p>
                         <p class="content-price">25€</p>
-                        <span class="menu__card--checked">
-                            <i class="fa-solid fa-circle-check fa-lg"></i>
-                        </span>
                     </div>
                 </div>
 
@@ -70,19 +155,24 @@
                 <div class="menu__dishes">
                     <h2 class="menu__subtitle">Plats</h2>
                 </div>
-                <input type="checkbox" id="checkedCard" class="hidden-checkbox">
-                <label for="checkedCard" class="card-checked">
-                    <div class="menu__card">
+                <div class="menu__card">
+                    <input type="checkbox" id="checkedCard" class="hidden-checkbox">
+                    <label for="checkedCard" class="card-checked"></label>
                         <div class="menu__card--content">
+                            <div class="card-text">
                             <h3 class="content-title">Filet de bœuf aux herbes</h3>
                             <p class="content-subtitle">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div class="toto">
                             <p class="content-price">40€</p>
                             <span class="checked">
                                 <i class="fa-solid fa-circle-check fa-lg"></i>
                             </span>
                         </div>
                     </div>
-                </label>
+                        
+                </div>
+                
                 <div class="menu__card">
                     <div class="menu__card--content">
                         <h3 class="content-title">Parmentier de queue de bœuf</h3>
