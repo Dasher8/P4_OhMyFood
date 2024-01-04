@@ -114,7 +114,7 @@
   background: #99e2d0;
 }
 .menu__card {
-  width: 94%;
+  width: 340px;
   height: 69px;
   display: flex;
   align-items: center;
@@ -150,6 +150,25 @@
   position: absolute;
   right: 15px;
   bottom: 13px;
+}
+.menu__card--checked {
+  width: 58px;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu__card--checked .fa-circle-check {
+  color: #f6f6f6;
 }
 .menu .order-button {
   width: 186px;

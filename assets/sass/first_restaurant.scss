@@ -100,11 +100,13 @@ $icon-color-dark: #353535;
       font-size: large;
     }
 
+
     h1 {
       font-size: 28px;
       font-family: Shrikhand;
       font-weight: 400;
     }
+
   }
 
   &__starters,
@@ -135,7 +137,7 @@ $icon-color-dark: #353535;
   }
 
   &__card {
-    width: 94%;
+    width: 340px;
     height: 69px;
     display: flex;
     align-items: center;
@@ -175,6 +177,28 @@ $icon-color-dark: #353535;
         bottom: 13px;
       }
     }
+
+    &--checked {
+      width: 58px;
+      height: 69px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      background: $tertiary-color;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      .fa-circle-check {
+        color: $background-color;
+        
+      }
+    }    
   }
 
   .order-button {
