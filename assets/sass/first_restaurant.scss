@@ -100,13 +100,11 @@ $icon-color-dark: #353535;
       font-size: large;
     }
 
-
     h1 {
       font-size: 28px;
       font-family: Shrikhand;
       font-weight: 400;
     }
-
   }
 
   &__starters,
@@ -147,6 +145,7 @@ $icon-color-dark: #353535;
     border-radius: 15px;
     margin: 0px 0 10px 0px;
     position: relative;
+    cursor: pointer;
     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 
     &--content {
@@ -178,7 +177,7 @@ $icon-color-dark: #353535;
       }
     }
 
-    &--checked {
+    .checked {
       width: 58px;
       height: 69px;
       display: flex;
@@ -193,14 +192,32 @@ $icon-color-dark: #353535;
       background: $tertiary-color;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
 
       .fa-circle-check {
         color: $background-color;
-        
       }
-    }    
+    }
+  }
+  .hidden-checkbox:checked + .card-checked .checked {
+    opacity: 1;
   }
 
+  .hidden-checkbox:checked + .card-checked .content-subtitle {
+    max-width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hidden-checkbox:checked + .card-checked .content-price {
+    right: 70px;
+  }
+
+  .hidden-checkbox {
+    display: none;
+  }
   .order-button {
     width: 186px;
     height: 50px;

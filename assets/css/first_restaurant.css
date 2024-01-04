@@ -124,6 +124,7 @@
   border-radius: 15px;
   margin: 0px 0 10px 0px;
   position: relative;
+  cursor: pointer;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
 .menu__card--content {
@@ -151,7 +152,7 @@
   right: 15px;
   bottom: 13px;
 }
-.menu__card--checked {
+.menu__card .checked {
   width: 58px;
   height: 69px;
   display: flex;
@@ -166,9 +167,26 @@
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.menu__card--checked .fa-circle-check {
+.menu__card .checked .fa-circle-check {
   color: #f6f6f6;
+}
+.menu .hidden-checkbox:checked + .card-checked .checked {
+  opacity: 1;
+}
+.menu .hidden-checkbox:checked + .card-checked .content-subtitle {
+  max-width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu .hidden-checkbox:checked + .card-checked .content-price {
+  right: 70px;
+}
+.menu .hidden-checkbox {
+  display: none;
 }
 .menu .order-button {
   width: 186px;
