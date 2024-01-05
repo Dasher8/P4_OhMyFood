@@ -158,7 +158,6 @@ $icon-color-dark: #353535;
       flex-wrap: wrap;
       box-sizing: border-box;
       z-index: 500;
-      transition: 0.3s ease-in-out;
 
       .content-title {
         font-size: 18px;
@@ -167,29 +166,31 @@ $icon-color-dark: #353535;
       }
 
       .content-subtitle {
+        width: 278px;
         font-size: 15px;
         font-weight: 300;
+        transition: max-width ease-in-out 0.5s;
       }
 
       .content-price {
         font-size: 15px;
         font-weight: 700;
-        margin-right: 5px;
         position: absolute;
-        right: 85px;
+        right: 90px;
         bottom: 13px;
       }
     }
 
     .card-text {
       width: calc(100% - 50px);
-      transition: ease-in-out 0.3s;
-      text-overflow: ellipsis;
-      white-space: nowrap;
       overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: max-width ease-in-out 0.5s;
     }
+      
 
-    .toto {
+   .toto {
       width: 116px;
       height: 69px;
       display: flex;
@@ -199,7 +200,7 @@ $icon-color-dark: #353535;
       right: -80px;
       top: 0;
       box-sizing: border-box;
-      transition: 0.3s ease-in-out;
+      transition: 0.5s ease-in-out;
       
 
       .checked {
@@ -235,12 +236,18 @@ $icon-color-dark: #353535;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    transition: max-width ease-in-out 0.5s ;
   }
 
   
 
+  
+
   .menu__card:hover .toto {
-    right: -22px;
+    /*right: -22px;*/
+    transform: translate(-58px, 0);
+    
+    
   }
   
 
@@ -250,9 +257,10 @@ $icon-color-dark: #353535;
 
   .hidden-checkbox:checked + .card-checked .content-subtitle {
     max-width: 230px;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
+    transition: max-width ease-in-out 0.3s;
   }
 
   .hidden-checkbox:checked + .card-checked .content-price {

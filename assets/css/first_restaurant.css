@@ -137,7 +137,6 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   z-index: 500;
-  transition: 0.3s ease-in-out;
 }
 .menu__card--content .content-title {
   font-size: 18px;
@@ -145,23 +144,24 @@
   padding-bottom: 5px;
 }
 .menu__card--content .content-subtitle {
+  width: 278px;
   font-size: 15px;
   font-weight: 300;
+  transition: max-width ease-in-out 0.5s;
 }
 .menu__card--content .content-price {
   font-size: 15px;
   font-weight: 700;
-  margin-right: 5px;
   position: absolute;
-  right: 85px;
+  right: 90px;
   bottom: 13px;
 }
 .menu__card .card-text {
   width: calc(100% - 50px);
-  transition: ease-in-out 0.3s;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: max-width ease-in-out 0.5s;
 }
 .menu__card .toto {
   width: 116px;
@@ -173,7 +173,7 @@
   right: -80px;
   top: 0;
   box-sizing: border-box;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .menu__card .toto .checked {
   width: 58px;
@@ -203,18 +203,21 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: max-width ease-in-out 0.5s;
 }
 .menu .menu__card:hover .toto {
-  right: -22px;
+  /*right: -22px;*/
+  transform: translate(-58px, 0);
 }
 .menu .hidden-checkbox:checked + .card-checked .checked {
   opacity: 1;
 }
 .menu .hidden-checkbox:checked + .card-checked .content-subtitle {
   max-width: 230px;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  transition: max-width ease-in-out 0.3s;
 }
 .menu .hidden-checkbox:checked + .card-checked .content-price {
   right: 70px;
