@@ -103,6 +103,86 @@
 
 -->
 
+<style>
+    .rectangle {
+        width: 300px;
+        height: 40px;
+        border: 1px solid red;
+        position: relative;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .titi {
+        width: calc(100% - 50px);
+        height: 40px;
+        transition: ease-in-out .3s;
+    }
+
+    .titi .tutu {
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .toto {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        right: -50px;
+        transition: ease-in-out .3s;
+    }
+
+    .price {
+        width: 50px;
+        position: absolute;
+        left: 10px;
+        transition: ease-in-out .3s;
+    }
+
+    .care {
+        width: 50px;
+        height: 40px;
+        background: red;
+        position: absolute;
+        right: -50px;
+        transition: ease-in-out .3s;
+    }
+
+    .rectangle:hover .titi {
+        width: calc(100% - 100px);
+    }
+
+    .rectangle:hover .toto {
+        right: 0px;
+    }
+    .rectangle:hover .care {
+        right: 0px;
+    }
+
+</style>
+<div class="rectangle">
+    <div class="titi">
+        <p class="tutu">lorem ipsum dolor set imaeimi</p>
+    </div>
+    <div class="toto">
+        <span class="price">25€</span>
+        <span class="care"></span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="main-container">
         <header class="header">
