@@ -137,31 +137,26 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   z-index: 500;
+  overflow: hidden;
 }
-.menu__card--content .content-title {
+.menu__card--content .card-text {
+  width: calc(100% - 58px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__card--content .card-text .content-title {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 5px;
 }
-.menu__card--content .content-subtitle {
+.menu__card--content .card-text .content-subtitle {
   width: 278px;
   font-size: 15px;
   font-weight: 300;
-  transition: max-width ease-in-out 0.5s;
-}
-.menu__card--content .content-price {
-  font-size: 15px;
-  font-weight: 700;
-  position: absolute;
-  right: 90px;
-  bottom: 13px;
-}
-.menu__card .card-text {
-  width: calc(100% - 50px);
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
-  transition: max-width ease-in-out 0.5s;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__card .toto {
   width: 116px;
@@ -173,7 +168,17 @@
   right: -80px;
   top: 0;
   box-sizing: border-box;
-  transition: 0.5s ease-in-out;
+  transition: ease-in-out 0.5s;
+}
+.menu__card .toto .content-price {
+  width: 58px;
+  height: 69px;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  right: 60px;
+  top: 38px;
+  transition: ease-in-out 0.5s;
 }
 .menu__card .toto .checked {
   width: 58px;
@@ -185,6 +190,7 @@
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  transition: ease-in-out 0.5s;
 }
 .menu__card .toto .fa-circle-check {
   color: #f6f6f6;
@@ -203,7 +209,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  transition: max-width ease-in-out 0.5s;
 }
 .menu .menu__card:hover .toto {
   /*right: -22px;*/

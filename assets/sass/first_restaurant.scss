@@ -158,6 +158,14 @@ $icon-color-dark: #353535;
       flex-wrap: wrap;
       box-sizing: border-box;
       z-index: 500;
+      overflow: hidden;
+
+      .card-text {
+        width: calc(100% - 58px);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+       
 
       .content-title {
         font-size: 18px;
@@ -169,24 +177,15 @@ $icon-color-dark: #353535;
         width: 278px;
         font-size: 15px;
         font-weight: 300;
-        transition: max-width ease-in-out 0.5s;
+        text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        
       }
 
-      .content-price {
-        font-size: 15px;
-        font-weight: 700;
-        position: absolute;
-        right: 90px;
-        bottom: 13px;
-      }
     }
 
-    .card-text {
-      width: calc(100% - 50px);
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      transition: max-width ease-in-out 0.5s;
+    
     }
       
 
@@ -200,7 +199,18 @@ $icon-color-dark: #353535;
       right: -80px;
       top: 0;
       box-sizing: border-box;
-      transition: 0.5s ease-in-out;
+      transition: ease-in-out 0.5s;
+
+      .content-price {
+        width: 58px;
+        height: 69px;
+        font-size: 15px;
+        font-weight: 700;
+        position: absolute;
+        right: 60px;
+        top: 38px;
+        transition: ease-in-out 0.5s;
+      }
       
 
       .checked {
@@ -213,6 +223,7 @@ $icon-color-dark: #353535;
         background: $tertiary-color;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
+        transition: ease-in-out 0.5s;
       }
 
       .fa-circle-check {
@@ -236,7 +247,7 @@ $icon-color-dark: #353535;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: max-width ease-in-out 0.5s ;
+    
   }
 
   
