@@ -155,12 +155,12 @@ flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
   }
 
   &__steps p {
     font-size: 16px;
     font-weight: 500;
+    right: 10px;
   }
 
   #store-icon {
@@ -170,6 +170,7 @@ flex-direction: column;
   .functioning__steps i {
     color: $icon-color;
     padding-right: 15px;
+    padding-left: 30px;
   }
 
   &__first-step,
@@ -182,7 +183,6 @@ flex-direction: column;
     align-items: center;
     border-radius: 20px;
     margin-bottom: 20px;
-    padding-left: 30px;
     font-size: 16px;
     font-weight: 500;
     background: #f6f6f6;
