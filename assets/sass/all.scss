@@ -163,6 +163,9 @@ flex-direction: column;
     font-weight: 500;
   }
 
+  #store-icon {
+      color: $primary-color;
+  }
 
   .functioning__steps i {
     color: $icon-color;
@@ -172,13 +175,16 @@ flex-direction: column;
   &__first-step,
   &__second-step,
   &__third-step {
-    width: calc(100% - 50px);
+    width: calc(100% - 52px);
     height: 72px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
     margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
     background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;

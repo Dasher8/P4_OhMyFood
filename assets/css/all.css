@@ -132,18 +132,24 @@
   font-size: 16px;
   font-weight: 500;
 }
+.functioning #store-icon {
+  color: #9356dc;
+}
 .functioning .functioning__steps i {
   color: #7e7e7e;
   padding-right: 15px;
 }
 .functioning__first-step, .functioning__second-step, .functioning__third-step {
-  width: calc(100% - 50px);
+  width: calc(100% - 52px);
   height: 72px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
   background: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
