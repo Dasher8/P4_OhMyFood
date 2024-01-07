@@ -11,6 +11,13 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
   margin: 0px; /*delets margins on the right and on the left*/
 }
 
+.header {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
 .image-container {
   width: 100%;
   height: 63px;
@@ -23,7 +30,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
   box-sizing: border-box;
   position: relative;
   /*z-index: 2;*/
-
+  
   img {
     width: 100%;
     height: 30px;
@@ -33,16 +40,21 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
 
 .location {
   width: 100%;
-  height: 15px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   background: rgba(234, 234, 234, 1);
   box-sizing: border-box;
 
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .fa-location-dot {
-    font-size: x-small;
+    font-size: small;
     margin-right: 15px;
     color: #353535;
   }
@@ -51,7 +63,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
     border: none;
     outline: none;
     color: #353535;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     background: none;
     padding: 0;
@@ -124,16 +136,12 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
 }
 
 .functioning {
+  width: 100%;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-
-  &__steps {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
   &__title {
     font-size: 24px;
@@ -141,10 +149,20 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
     padding: 40px 0px 30px 20px;
   }
 
+&__steps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+
   &__steps p {
     font-size: 16px;
     font-weight: 500;
   }
+
 
   .functioning__steps i {
     color: $icon-color;
@@ -154,8 +172,8 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
   &__first-step,
   &__second-step,
   &__third-step {
-    width: 80%;
-    height: 60px;
+    width: calc(100% - 50px);
+    height: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +199,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
     font-weight: 500;
     border-radius: 50%;
     box-sizing: border-box;
-    left: -10px;
+    left: -15px;
   }
 
   .functioning__second-step::before {
@@ -199,7 +217,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
     font-weight: 500;
     border-radius: 50%;
     box-sizing: border-box;
-    left: -10px;
+    left: -15px;
   }
 
   .functioning__third-step::before {
@@ -217,7 +235,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);;
     font-weight: 500;
     border-radius: 50%;
     box-sizing: border-box;
-    left: -10px;
+    left: -15px;
   }
 }
 
