@@ -90,22 +90,42 @@ $icon-color-dark: #353535;
     gap: 35px;
     box-sizing: border-box;
 
-    &--like img {
-      width: 25px;
-      height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-size: large;
-    }
-
     h1 {
       font-size: 28px;
       font-family: Shrikhand;
       font-weight: 400;
     }
+
+    &--like {
+      display: flex;
+      align-items: center;
+
+      .hidden-checkbox {
+        display: none;
+
+        &:checked + .card-like path {
+          fill: url(#like-gradient);
+          stroke: url(#like-gradient);
+        }
+      }
+
+      .card-like {
+        width: 25px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        path {
+          fill: transparent;
+          stroke-width: 2px;
+          stroke: black;
+          transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+        }
+      }
   }
+}
 
   &__starters,
   &__dishes,

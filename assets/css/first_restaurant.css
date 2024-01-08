@@ -76,19 +76,35 @@
   gap: 35px;
   box-sizing: border-box;
 }
-.menu__title--like img {
+.menu__title h1 {
+  font-size: 28px;
+  font-family: Shrikhand;
+  font-weight: 400;
+}
+.menu__title--like {
+  display: flex;
+  align-items: center;
+}
+.menu__title--like .hidden-checkbox {
+  display: none;
+}
+.menu__title--like .hidden-checkbox:checked + .card-like path {
+  fill: url(#like-gradient);
+  stroke: url(#like-gradient);
+}
+.menu__title--like .card-like {
   width: 25px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
-  font-size: large;
+  cursor: pointer;
 }
-.menu__title h1 {
-  font-size: 28px;
-  font-family: Shrikhand;
-  font-weight: 400;
+.menu__title--like .card-like path {
+  fill: transparent;
+  stroke-width: 2px;
+  stroke: black;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
 }
 .menu__starters, .menu__dishes, .menu__desserts {
   width: 100%;
