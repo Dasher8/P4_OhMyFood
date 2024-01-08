@@ -393,11 +393,37 @@
   .menu__starters, .menu__dishes, .menu__desserts {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     position: relative;
     margin: 30px 0 10px 0;
-    left: 20px;
+  }
+  .menu__subtitle {
+    width: 150%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 20px 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .menu__card {
+    width: calc(150% - 20px);
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: white;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   }
   .footer {
     width: 100%;
