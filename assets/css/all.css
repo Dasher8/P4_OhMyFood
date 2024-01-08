@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   background: rgb(234, 234, 234);
+  position: relative;
   box-sizing: border-box;
 }
 .location__content {
@@ -49,6 +50,7 @@
   color: #353535;
 }
 .location__name {
+  width: 55%;
   border: none;
   outline: none;
   color: #353535;
@@ -401,12 +403,6 @@
     width: 218px;
     height: 50px;
     margin-top: 30px;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
-    transition: box-shadow 0.5s ease-in-out, background 0.8s ease-in-out;
-  }
-  .headline .explore-button:hover {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   }
   .functioning {
     width: 100%;
@@ -430,7 +426,6 @@
     height: 73px;
     display: flex;
     justify-content: flex-start;
-    padding-left: 35px;
     margin: 20px;
     box-sizing: border-box;
   }
