@@ -12,10 +12,10 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 .header {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .image-container {
@@ -30,7 +30,7 @@ flex-direction: column;
   box-sizing: border-box;
   position: relative;
   /*z-index: 2;*/
-  
+
   img {
     width: 100%;
     height: 30px;
@@ -119,37 +119,30 @@ flex-direction: column;
     position: relative;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     background: $button-gradient;
-    transition: box-shadow 0.5s ease-in-out, background 0.8s ease-in-out;
+    transition: box-shadow 0.8s ease, background 0.8s ease;
 
     &::before {
-      content: '';
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    position: absolute;
-    opacity: 0;
-    box-sizing: border-box;
-   top: -20px;
-   z-index: 999;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgba(255, 255, 255, 0.15);
-    transition: 0.5s ease-in-out;
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      position: absolute;
+      opacity: 0;
+      box-sizing: border-box;
+      z-index: 999;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background: rgba(255, 255, 255, 0.15);
+      transition: 0.8s ease;
     }
-
 
     &:hover {
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
       background: rgba(255, 255, 255, 0.15),
         linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
 
-        &::before {
-          opacity: 1;
-        }
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }
@@ -160,7 +153,6 @@ flex-direction: column;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  
 
   &__title {
     font-size: 24px;
@@ -168,7 +160,7 @@ flex-direction: column;
     padding: 40px 0px 30px 20px;
   }
 
-&__steps {
+  &__steps {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -183,7 +175,7 @@ flex-direction: column;
   }
 
   #store-icon {
-      color: $primary-color;
+    color: $primary-color;
   }
 
   .functioning__steps i {
@@ -376,21 +368,21 @@ flex-direction: column;
     }
 
     .hidden-checkbox:checked + .card-like path {
-        fill: url(#like-gradient);
-        stroke: url(#like-gradient);
+      fill: url(#like-gradient);
+      stroke: url(#like-gradient);
     }
 
     #heartCheckbox-2:checked + .card-like path {
       fill: url(#like-gradient-2);
-        stroke: url(#like-gradient-2);
+      stroke: url(#like-gradient-2);
     }
     #heartCheckbox-3:checked + .card-like path {
       fill: url(#like-gradient-3);
-        stroke: url(#like-gradient-3);
+      stroke: url(#like-gradient-3);
     }
     #heartCheckbox-4:checked + .card-like path {
       fill: url(#like-gradient-4);
-        stroke: url(#like-gradient-4);
+      stroke: url(#like-gradient-4);
     }
   }
 
