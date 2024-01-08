@@ -81,10 +81,6 @@
   font-family: Shrikhand;
   font-weight: 400;
 }
-.menu__title--like {
-  display: flex;
-  align-items: center;
-}
 .menu__title--like .hidden-checkbox {
   display: none;
 }
