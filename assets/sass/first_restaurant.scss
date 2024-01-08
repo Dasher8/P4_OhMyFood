@@ -86,8 +86,8 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 25px 0 0 15px;
+    justify-content: center;
+    padding: 25px 0 0 0;
     gap: 35px;
     box-sizing: border-box;
 
@@ -452,7 +452,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     }
 
     &__title {
-      width: 100%;
+      width: 150%;
       display: flex;
       align-items: center;
       justify-content: center;
