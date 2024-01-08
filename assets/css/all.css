@@ -101,7 +101,7 @@
   box-sizing: border-box;
   position: relative;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   transition: box-shadow 0.8s ease, background 0.8s ease;
 }
 .headline .explore-button::before {

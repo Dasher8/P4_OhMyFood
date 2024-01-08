@@ -4,7 +4,7 @@ $tertiary-color: #99e2d0;
 $background-color: #f6f6f6;
 $footer-color: #353535;
 $icon-color: #7e7e7e;
-$button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+$button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
 
 * {
   font-family: "Roboto", sans-serif;
@@ -130,6 +130,7 @@ $button-gradient: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
       opacity: 0;
       box-sizing: border-box;
       z-index: 999;
+
       background: rgba(255, 255, 255, 0.15);
       transition: 0.8s ease;
     }
