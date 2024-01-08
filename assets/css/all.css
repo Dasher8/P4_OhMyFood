@@ -311,6 +311,18 @@
   fill: url(#like-gradient);
   stroke: url(#like-gradient);
 }
+.restaurants__cards .card #heartCheckbox-2:checked + .card-like path {
+  fill: url(#like-gradient-2);
+  stroke: url(#like-gradient-2);
+}
+.restaurants__cards .card #heartCheckbox-3:checked + .card-like path {
+  fill: url(#like-gradient-3);
+  stroke: url(#like-gradient-3);
+}
+.restaurants__cards .card #heartCheckbox-4:checked + .card-like path {
+  fill: url(#like-gradient-4);
+  stroke: url(#like-gradient-4);
+}
 .restaurants__cards .img-container img {
   width: 100%;
   height: 200px;

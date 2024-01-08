@@ -360,6 +360,19 @@ flex-direction: column;
         fill: url(#like-gradient);
         stroke: url(#like-gradient);
     }
+
+    #heartCheckbox-2:checked + .card-like path {
+      fill: url(#like-gradient-2);
+        stroke: url(#like-gradient-2);
+    }
+    #heartCheckbox-3:checked + .card-like path {
+      fill: url(#like-gradient-3);
+        stroke: url(#like-gradient-3);
+    }
+    #heartCheckbox-4:checked + .card-like path {
+      fill: url(#like-gradient-4);
+        stroke: url(#like-gradient-4);
+    }
   }
 
   .img-container img {
