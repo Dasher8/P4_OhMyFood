@@ -105,14 +105,20 @@
 .menu__starters, .menu__dishes, .menu__desserts {
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 30px 0 10px 0;
 }
 .menu__subtitle {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: 16px;
   font-weight: 300;
-  padding: 0 0 10px 10px;
+  padding: 0 0 20px 10px;
+  margin-left: 10px;
   text-transform: uppercase;
   position: relative;
 }
@@ -123,10 +129,11 @@
   display: flex;
   position: absolute;
   margin-top: 5px;
+  top: 18px;
   background: #99e2d0;
 }
 .menu__card {
-  width: 340px;
+  width: calc(100% - 20px);
   height: 69px;
   display: flex;
   align-items: center;
@@ -134,7 +141,7 @@
   flex-direction: row;
   background: white;
   border-radius: 15px;
-  margin: 0px 0 10px 0px;
+  margin: 0 0 10px 0;
   position: relative;
   cursor: pointer;
   overflow: hidden;

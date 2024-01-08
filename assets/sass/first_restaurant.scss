@@ -130,14 +130,20 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   &__desserts {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 30px 0 10px 0;
   }
   &__subtitle {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-size: 16px;
     font-weight: 300;
-    padding: 0 0 10px 10px;
+    padding: 0 0 20px 10px;
+    margin-left: 10px;
     text-transform: uppercase;
     position: relative;
   }
@@ -149,11 +155,12 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     display: flex;
     position: absolute;
     margin-top: 5px;
+    top: 18px;
     background: $tertiary-color;
   }
 
   &__card {
-    width: 340px;
+    width: calc(100% - 20px);
     height: 69px;
     display: flex;
     align-items: center;
@@ -161,7 +168,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     flex-direction: row;
     background: white;
     border-radius: 15px;
-    margin: 0px 0 10px 0px;
+    margin: 0 0 10px 0;
     position: relative;
     cursor: pointer;
     overflow: hidden;
