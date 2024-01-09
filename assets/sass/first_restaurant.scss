@@ -14,6 +14,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
 
 
 /*LOADER*/
+/*
 .loader-background {
 display: flex;
   justify-content: center;
@@ -127,7 +128,32 @@ display: flex;
     visibility: hidden;
   }
 }
+*/
 /*LOADER*/
+
+/*CONTENT LOADING*/
+
+/*.main-container {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 1s ease-in-out forwards;
+}*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*CONTENT LOADING*/
 
 
 .main-container {
@@ -143,6 +169,7 @@ display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 1.3s ease-in-out forwards;
 
   &__arrow {
     position: absolute;
@@ -162,6 +189,7 @@ display: flex;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    animation: fadeIn 1.5s ease-in-out forwards;
 
     .fa-arrow-left {
       color: #353535;
@@ -177,6 +205,7 @@ display: flex;
 
 .main-photo img {
   width: 100%;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .menu {
@@ -191,6 +220,7 @@ display: flex;
   background: $background-color;
   box-sizing: border-box;
   position: relative;
+  
 
   &__content {
     width: 100%;
@@ -198,6 +228,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out forwards;
   }
 
   &__title {
@@ -243,6 +274,21 @@ display: flex;
   }
 }
 
+&__starters {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+&__dishes {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+&__desserts {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
   &__starters,
   &__dishes,
   &__desserts {
@@ -252,6 +298,7 @@ display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 30px 0 10px 0;
+    opacity: 0;
   }
   &__subtitle {
     width: calc(100% - 10px);
@@ -474,6 +521,9 @@ display: flex;
   width: 100%;
   height: 186px;
   background: $footer-color;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
 
   a {
     text-decoration: none;
