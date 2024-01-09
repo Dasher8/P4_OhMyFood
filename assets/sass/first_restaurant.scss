@@ -685,12 +685,178 @@ display: flex;
 
     &__content {
       width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 30px 0 0;
+      box-sizing: border-box;
+      position: absolute;
+      top: 20px;
+    }
+
+    .footer-logo h3 {
+      padding: 0;
+      font-size: 18px;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+
+      a {
+        color: white;
+      }
+
+      li {
+        margin-right: 10px;
+        padding: 0;
+      }
+
+      .mentions {
+        margin-left: 10px;
+        font-weight: 400;
+      }
+
+      .contact {
+        margin-right: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1065px) {
+  .header {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__arrow {
+      position: absolute;
+      left: 30px;
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+
+    .fa-arrow-left {
+      color: #353535;
+    }
+
+    img {
+      width: 100%;
+      height: 34px;
+      box-sizing: border-box;
+    }
+  }
+
+  .main-photo {
+    width: 100%;
+    height: 380px;
+    img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+  }
+
+  .menu {
+    width: 70%;
+
+    &__card {
+      width: 634px;
+    }
+
+    &__title {
+      width: 150%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0 0 0;
+      gap: 35px;
+      box-sizing: border-box;
+    }
+
+    &__content {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &__starters,
+    &__dishes,
+    &__desserts {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 30px 0 10px 0;
+    }
+
+    &__subtitle {
+      width: 150%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: 16px;
+      font-weight: 300;
+      padding: 0 0 20px 10px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    &__card {
+      width: calc(150% - 20px);
+      height: 69px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background: white;
+      border-radius: 15px;
+      margin: 0 0 10px 0;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 114px;
+
+    &__content {
+      width: 100%;
       height: 50px;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: flex-start;
-      padding: 80px 50px 0 0;
+      padding: 40px 70px 0 0;
+      position: absolute;
+      top: 40px;
       box-sizing: border-box;
     }
 
