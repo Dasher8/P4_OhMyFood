@@ -136,16 +136,17 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     margin: 30px 0 10px 0;
   }
   &__subtitle {
-    width: 100%;
+    width: calc(100% - 10px);
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 16px;
     font-weight: 300;
-    padding: 0 0 20px 10px;
+    padding: 0 0 20px 0;
     margin-left: 10px;
     text-transform: uppercase;
     position: relative;
+    box-sizing: border-box;
   }
 
   &__subtitle::after {
