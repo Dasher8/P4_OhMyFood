@@ -268,7 +268,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   &__title {
     font-size: 24px;
     font-weight: 700;
-    padding: 50px 0px 10px 20px;
+    padding: 50px 0px 10px 5%;
   }
 }
 .restaurants__cards {
@@ -539,7 +539,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     &__first-step,
     &__second-step,
     &__third-step {
-      width: calc(80% / 3 - 30px);
+      width: calc(80% / 3 - 40px);
       height: 73px;
       display: flex;
       justify-content: flex-start;
@@ -555,7 +555,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
 
     &__title {
       margin: 0;
-      padding: 40px 0 30px 130px;
+      padding: 40px 0 30px 8.5%;
     }
     &__cards {
       width: 100%;

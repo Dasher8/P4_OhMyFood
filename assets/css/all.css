@@ -234,7 +234,7 @@
 .restaurants__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 50px 0px 10px 20px;
+  padding: 50px 0px 10px 5%;
 }
 
 .restaurants__cards {
@@ -465,7 +465,7 @@
     font-size: large;
   }
   .functioning__first-step, .functioning__second-step, .functioning__third-step {
-    width: calc(26.6666666667% - 30px);
+    width: calc(26.6666666667% - 40px);
     height: 73px;
     display: flex;
     justify-content: flex-start;
@@ -479,7 +479,7 @@
   }
   .restaurants__title {
     margin: 0;
-    padding: 40px 0 30px 130px;
+    padding: 40px 0 30px 8.5%;
   }
   .restaurants__cards {
     width: 100%;
