@@ -137,7 +137,7 @@
 .functioning__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 40px 0px 30px 20px;
+  padding: 40px 0px 30px 10px;
 }
 .functioning__steps {
   width: 100%;
@@ -405,7 +405,7 @@
     display: flex;
     align-items: flex-start;
     margin: 0;
-    padding: 40px 0 30px 20px;
+    padding: 40px 0 30px 2%;
   }
   .functioning__steps {
     display: flex;
