@@ -452,13 +452,15 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     box-sizing: border-box;
 
     &__title {
       display: flex;
+      align-items: flex-start;
       margin: 0;
-      padding: 40px 0 30px 150px;
+      padding: 40px 0 30px 20px;
     }
     &__steps {
       display: flex;
@@ -513,15 +515,14 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
 
     &__title {
-      width: 100%;
       display: flex;
       align-items: flex-start;
       margin: 0;
-      padding: 40px 0 30px 150px;
+      padding: 40px 0 30px 10%;
     }
     &__steps {
       display: flex;
