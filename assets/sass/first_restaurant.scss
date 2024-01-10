@@ -378,7 +378,7 @@ display: flex;
     }
       
 
-   .toto {
+   .checked-container {
       width: 116px;
       height: 69px;
       display: flex;
@@ -444,7 +444,7 @@ display: flex;
 
   
 
-  .menu__card:hover .toto {
+  .menu__card:hover .checked-container {
     /*right: -22px;*/
     transform: translate(-58px, 0);
     

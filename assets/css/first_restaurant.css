@@ -326,7 +326,7 @@ display: flex;
   font-size: 15px;
   font-weight: 300;
 }
-.menu__card .toto {
+.menu__card .checked-container {
   width: 116px;
   height: 69px;
   display: flex;
@@ -338,7 +338,7 @@ display: flex;
   box-sizing: border-box;
   transition: ease-in-out 0.5s;
 }
-.menu__card .toto .content-price {
+.menu__card .checked-container .content-price {
   /* width: 58px;*/
   /* height: 69px;*/
   font-size: 15px;
@@ -349,7 +349,7 @@ display: flex;
   top: 37px;
   transition: ease-in-out 0.5s;
 }
-.menu__card .toto .checked {
+.menu__card .checked-container .checked {
   width: 58px;
   height: 69px;
   display: flex;
@@ -361,7 +361,7 @@ display: flex;
   border-bottom-right-radius: 15px;
   transition: ease-in-out 0.5s;
 }
-.menu__card .toto .fa-circle-check {
+.menu__card .checked-container .fa-circle-check {
   color: #f6f6f6;
 }
 .menu__card .card-checked {
@@ -379,7 +379,7 @@ display: flex;
   white-space: nowrap;
   overflow: hidden;
 }
-.menu .menu__card:hover .toto {
+.menu .menu__card:hover .checked-container {
   /*right: -22px;*/
   transform: translate(-58px, 0);
 }
