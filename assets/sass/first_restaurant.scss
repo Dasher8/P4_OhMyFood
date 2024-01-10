@@ -12,7 +12,6 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   margin: 0px; /*delets margins on the right and on the left*/
 }
 
-
 /*LOADER*/
 /*
 .loader-background {
@@ -142,7 +141,7 @@ display: flex;
 @keyframes fadeIn {
   from {
     opacity: 0;
-    
+
     transform: translateY(-50px);
   }
   to {
@@ -151,10 +150,7 @@ display: flex;
   }
 }
 
-
-
 /*CONTENT LOADING*/
-
 
 .main-container {
   display: flex;
@@ -220,7 +216,6 @@ display: flex;
   background: $background-color;
   box-sizing: border-box;
   position: relative;
-  
 
   &__content {
     width: 100%;
@@ -271,23 +266,23 @@ display: flex;
           transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
         }
       }
+    }
   }
-}
 
-&__starters {
-  animation: fadeIn 1.5s ease-in-out forwards;
-  animation-delay: 1.5s;
-}
+  &__starters {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+  }
 
-&__dishes {
-  animation: fadeIn 1.5s ease-in-out forwards;
-  animation-delay: 2s;
-}
+  &__dishes {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2s;
+  }
 
-&__desserts {
-  animation: fadeIn 1.5s ease-in-out forwards;
-  animation-delay: 2.5s;
-}
+  &__desserts {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+  }
 
   &__starters,
   &__dishes,
@@ -350,13 +345,7 @@ display: flex;
       box-sizing: border-box;
       z-index: 500;
       overflow: hidden;
-
-      .card-text {
-        /*width: calc(100% - 58px);*/
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-       
+      cursor: pointer;
 
       .content-title {
         font-size: 18px;
@@ -368,17 +357,10 @@ display: flex;
         width: 280px;
         font-size: 15px;
         font-weight: 300;
-        
-        
       }
-
     }
 
-    
-    }
-      
-
-   .checked-container {
+    .checked-container {
       width: 116px;
       height: 69px;
       display: flex;
@@ -391,8 +373,8 @@ display: flex;
       transition: ease-in-out 0.5s;
 
       .content-price {
-       /* width: 58px;*/
-       /* height: 69px;*/
+        /* width: 58px;*/
+        /* height: 69px;*/
         font-size: 15px;
         font-weight: 700;
         position: absolute;
@@ -401,7 +383,6 @@ display: flex;
         top: 37px;
         transition: ease-in-out 0.5s;
       }
-      
 
       .checked {
         width: 58px;
@@ -425,6 +406,7 @@ display: flex;
       height: 69px;
       position: absolute;
       z-index: 800;
+      cursor: pointer;
     }
   }
 
@@ -437,38 +419,30 @@ display: flex;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    
   }
-
-  
-
-  
 
   .menu__card:hover .checked-container {
     /*right: -22px;*/
     transform: translate(-58px, 0);
-    
-    
-  }
-  
-
-  .hidden-checkbox:checked + .card-checked .checked {
-    opacity: 1;
   }
 
-  .hidden-checkbox:checked + .card-checked .content-subtitle {
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content
+    .content-subtitle {
     max-width: 230px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: max-width ease-in-out 0.3s;
   }
 
-  .hidden-checkbox:checked + .card-checked .content-price {
-    right: 70px;
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content
+    .checked-container {
+    transform: translate(-58px, 0);
   }
 
- 
   .order-button {
     width: 186px;
     height: 50px;
@@ -489,7 +463,6 @@ display: flex;
     box-sizing: border-box;
     transition: box-shadow 0.8s ease, background 0.8s ease;
 
-
     &::before {
       content: "";
       width: 100%;
@@ -505,8 +478,7 @@ display: flex;
 
     &:hover {
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-      background:
-        linear-gradient(-10deg, #9356dc -5.2%, #ff79da 110.74%);
+      background: linear-gradient(-10deg, #9356dc -5.2%, #ff79da 110.74%);
 
       &::before {
         opacity: 1;
@@ -732,7 +704,6 @@ display: flex;
     }
   }
 }
-
 
 @media (min-width: 1065px) {
   .header {

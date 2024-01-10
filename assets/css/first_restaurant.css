@@ -309,19 +309,14 @@ display: flex;
   box-sizing: border-box;
   z-index: 500;
   overflow: hidden;
+  cursor: pointer;
 }
-.menu__card--content .card-text {
-  /*width: calc(100% - 58px);*/
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menu__card--content .card-text .content-title {
+.menu__card--content .content-title {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 5px;
 }
-.menu__card--content .card-text .content-subtitle {
+.menu__card--content .content-subtitle {
   width: 280px;
   font-size: 15px;
   font-weight: 300;
@@ -369,6 +364,7 @@ display: flex;
   height: 69px;
   position: absolute;
   z-index: 800;
+  cursor: pointer;
 }
 .menu .hidden-checkbox {
   display: none;
@@ -383,18 +379,14 @@ display: flex;
   /*right: -22px;*/
   transform: translate(-58px, 0);
 }
-.menu .hidden-checkbox:checked + .card-checked .checked {
-  opacity: 1;
-}
-.menu .hidden-checkbox:checked + .card-checked .content-subtitle {
+.menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-subtitle {
   max-width: 230px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  transition: max-width ease-in-out 0.3s;
 }
-.menu .hidden-checkbox:checked + .card-checked .content-price {
-  right: 70px;
+.menu .hidden-checkbox:checked + .card-checked + .menu__card--content .checked-container {
+  transform: translate(-58px, 0);
 }
 .menu .order-button {
   width: 186px;
