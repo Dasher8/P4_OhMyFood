@@ -339,13 +339,14 @@ display: flex;
   transition: ease-in-out 0.5s;
 }
 .menu__card .toto .content-price {
-  width: 58px;
+  /* width: 58px;*/
   /* height: 69px;*/
   font-size: 15px;
   font-weight: 700;
   position: absolute;
-  right: 60px;
-  top: 38px;
+  /*right: 60px;*/
+  right: 90px;
+  top: 37px;
   transition: ease-in-out 0.5s;
 }
 .menu__card .toto .checked {
