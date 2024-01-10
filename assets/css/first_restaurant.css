@@ -460,6 +460,10 @@ display: flex;
 }
 .footer__list li {
   padding-bottom: 10px;
+  color: white;
+}
+.footer__list li:hover {
+  text-decoration: underline;
 }
 .footer__list .fa-utensils {
   margin-right: 10px;
