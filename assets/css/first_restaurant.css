@@ -317,9 +317,13 @@ display: flex;
   padding-bottom: 5px;
 }
 .menu__card--content .content-subtitle {
-  width: 280px;
+  max-width: calc(100% - 40px);
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: max-width 0.5s linear;
 }
 .menu__card .checked-container {
   width: 116px;
@@ -331,7 +335,7 @@ display: flex;
   right: -80px;
   top: 0;
   box-sizing: border-box;
-  transition: ease-in-out 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .menu__card .checked-container .content-price {
   /* width: 58px;*/
@@ -342,7 +346,7 @@ display: flex;
   /*right: 60px;*/
   right: 90px;
   top: 37px;
-  transition: ease-in-out 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .menu__card .checked-container .checked {
   width: 58px;
@@ -354,21 +358,21 @@ display: flex;
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: ease-in-out 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .menu__card .checked-container .fa-circle-check {
   color: #f6f6f6;
 }
 .menu__card .checked-container::before {
   content: "";
-  width: 116px;
+  width: 100px;
   height: 69px;
   display: flex;
   position: absolute;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   opacity: 0;
   z-index: -2;
-  transition: opacity 0.5s ease-in-out;
+  animation: 0.5s linear;
 }
 .menu__card .card-checked {
   width: 340px;
@@ -381,26 +385,27 @@ display: flex;
   display: none;
 }
 .menu .menu__card:hover .checked-container::before {
-  animation: fade-in 0.5s ease-in-out forwards;
+  animation: fade-in 0.5s linear;
 }
 .menu .menu__card:not(:hover) .checked-container::before {
-  animation: fade-out 0.5s ease-in-out backwards;
+  animation: fade-out 0.5s linear;
 }
 .menu .menu__card:hover .content-subtitle {
   max-width: 230px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu .menu__card:hover .checked-container {
   /*right: -22px;*/
   transform: translate(-58px, 0);
 }
+.menu .hidden-checkbox:checked .checked-container::before {
+  animation: fade-in 0.5s linear forwards;
+}
+.menu .hidden-checkbox:not(:checked) .checked-container::before {
+  animation: fade-out 0.5s linear backwards;
+}
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-subtitle {
   max-width: 230px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  transition: max-width 0.3s linear;
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .checked-container {
   transform: translate(-58px, 0);
