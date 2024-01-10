@@ -311,7 +311,7 @@ display: flex;
   overflow: hidden;
 }
 .menu__card--content .card-text {
-  width: calc(100% - 58px);
+  /*width: calc(100% - 58px);*/
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -322,12 +322,9 @@ display: flex;
   padding-bottom: 5px;
 }
 .menu__card--content .card-text .content-subtitle {
-  width: 278px;
+  width: 280px;
   font-size: 15px;
   font-weight: 300;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu__card .toto {
   width: 116px;
@@ -343,7 +340,7 @@ display: flex;
 }
 .menu__card .toto .content-price {
   width: 58px;
-  height: 69px;
+  /* height: 69px;*/
   font-size: 15px;
   font-weight: 700;
   position: absolute;
