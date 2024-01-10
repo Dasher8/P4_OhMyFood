@@ -401,6 +401,19 @@ display: flex;
         color: $background-color;
       }
     }
+
+.checked-container::before {
+  content: "";
+  width: 116px;
+      height: 69px;
+  display: flex;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  opacity: 0;
+  z-index: -2;
+  transition: opacity 0.5s ease-in-out;
+}
+
     .card-checked {
       width: 340px;
       height: 69px;
@@ -412,6 +425,14 @@ display: flex;
 
   .hidden-checkbox {
     display: none;
+  }
+
+  .menu__card:hover .checked-container::before {
+    animation: fade-in 0.5s ease-in-out forwards;
+  }
+
+  .menu__card:not(:hover) .checked-container::before {
+    animation: fade-out 0.5s ease-in-out backwards;
   }
 
   .menu__card:hover .content-subtitle {
@@ -441,6 +462,28 @@ display: flex;
     + .menu__card--content
     .checked-container {
     transform: translate(-58px, 0);
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateX(0)
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50px)
+    }
   }
 
   .order-button {
