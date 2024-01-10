@@ -298,6 +298,7 @@
   background: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  cursor: pointer;
 }
 .functioning .functioning__first-step::before {
   content: "1";
@@ -417,9 +418,15 @@
   font-weight: 700;
   margin-bottom: 5px;
 }
+.restaurants__cards .card .card-content .card-txt__title:hover {
+  text-decoration: underline;
+}
 .restaurants__cards .card .card-content .card-txt__subtitle {
   font-size: 17px;
   font-weight: 300;
+}
+.restaurants__cards .card .card-content .card-txt__subtitle:hover {
+  text-decoration: underline;
 }
 .restaurants__cards .card .card-content .card-like img {
   width: 22px;
@@ -494,6 +501,10 @@
 }
 .footer__list li {
   padding-bottom: 10px;
+  color: white;
+}
+.footer__list li:hover {
+  text-decoration: underline;
 }
 .footer__list .fa-utensils {
   margin-right: 10px;

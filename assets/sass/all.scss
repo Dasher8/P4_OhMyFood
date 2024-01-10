@@ -11,6 +11,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   margin: 0px; /*delets margins on the right and on the left*/
 }
 
+
 /*LOADER*/
 .loader-background {
 display: flex;
@@ -318,6 +319,7 @@ display: flex;
     background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+    cursor: pointer;
   }
 
   .functioning__first-step::before {
@@ -386,6 +388,7 @@ display: flex;
     font-weight: 700;
     padding: 50px 0px 10px 5%;
   }
+  
 }
 .restaurants__cards {
   width: 100%;
@@ -445,9 +448,17 @@ display: flex;
           margin-bottom: 5px;
         }
 
+        &__title:hover {
+          text-decoration: underline;
+        }
+
         &__subtitle {
           font-size: 17px;
           font-weight: 300;
+        }
+
+        &__subtitle:hover {
+          text-decoration: underline;
         }
       }
 
@@ -533,8 +544,13 @@ display: flex;
 
     li {
       padding-bottom: 10px;
-    }
+      color: white;
 
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
     .fa-utensils {
       margin-right: 10px;
       font-size: x-small;
@@ -559,6 +575,7 @@ display: flex;
     color: white;
     padding: 20px;
   }
+  
 }
 
 @media (min-width: 765px) {
