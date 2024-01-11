@@ -448,7 +448,6 @@ display: flex;
 
   .menu__card:hover .content-title {
     max-width: calc(100% - 95px);
-    transition: max-width 0.3s linear;
   }
 
   .menu__card:hover .content-subtitle {
@@ -471,6 +470,12 @@ display: flex;
     + .card-checked
     + .menu__card--content
     .content-subtitle {
+    max-width: calc(100% - 95px);
+  }
+
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content .content-title {
     max-width: calc(100% - 95px);
   }
 

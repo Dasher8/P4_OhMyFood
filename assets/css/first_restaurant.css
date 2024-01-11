@@ -396,7 +396,6 @@ display: flex;
 }
 .menu .menu__card:hover .content-title {
   max-width: calc(100% - 95px);
-  transition: max-width 0.3s linear;
 }
 .menu .menu__card:hover .content-subtitle {
   max-width: calc(100% - 95px);
@@ -412,6 +411,9 @@ display: flex;
   animation: fade-out 0.3s linear;
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-subtitle {
+  max-width: calc(100% - 95px);
+}
+.menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-title {
   max-width: calc(100% - 95px);
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .checked-container {
