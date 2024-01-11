@@ -322,7 +322,7 @@ display: flex;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  transition: max-width 0.5s linear;
+  transition: max-width 0.3s linear;
 }
 .menu__card .checked-container {
   width: 116px;
@@ -334,7 +334,7 @@ display: flex;
   right: -80px;
   top: 0;
   box-sizing: border-box;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 .menu__card .checked-container .content-price {
   /* width: 58px;*/
@@ -345,7 +345,7 @@ display: flex;
   /*right: 60px;*/
   right: 90px;
   top: 38px;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 .menu__card .checked-container .checked {
   width: 58px;
@@ -357,7 +357,7 @@ display: flex;
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 .menu__card .checked-container .fa-circle-check {
   color: #f6f6f6;
@@ -371,7 +371,7 @@ display: flex;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   opacity: 0;
   z-index: -2;
-  animation: 0.5s linear;
+  animation: 0.3s linear;
 }
 .menu__card .card-checked {
   width: 340px;
@@ -384,10 +384,10 @@ display: flex;
   display: none;
 }
 .menu .menu__card:hover .checked-container::before {
-  animation: fade-in 0.5s linear;
+  animation: fade-in 0.3s linear;
 }
 .menu .menu__card:not(:hover) .checked-container::before {
-  animation: fade-out 0.5s linear;
+  animation: fade-out 0.3s linear;
 }
 .menu .menu__card:hover .content-subtitle {
   max-width: calc(100% - 95px);
@@ -397,10 +397,10 @@ display: flex;
   transform: translate(-58px, 0);
 }
 .menu .hidden-checkbox:checked .checked-container::before {
-  animation: fade-in 0.5s linear;
+  animation: fade-in 0.3s linear;
 }
 .menu .hidden-checkbox:not(:checked) .checked-container::before {
-  animation: fade-out 0.5s linear;
+  animation: fade-out 0.3s linear;
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-subtitle {
   max-width: calc(100% - 95px);
