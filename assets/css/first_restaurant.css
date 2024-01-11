@@ -288,9 +288,9 @@ display: flex;
   width: calc(100% - 20px);
   height: 69px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
   background: white;
   border-radius: 15px;
   margin: 0 0 10px 0;
@@ -304,7 +304,6 @@ display: flex;
   padding: 12px 0 15px 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
   z-index: 500;
@@ -335,7 +334,7 @@ display: flex;
   right: -80px;
   top: 0;
   box-sizing: border-box;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s linear;
 }
 .menu__card .checked-container .content-price {
   /* width: 58px;*/
@@ -345,8 +344,8 @@ display: flex;
   position: absolute;
   /*right: 60px;*/
   right: 90px;
-  top: 37px;
-  transition: 0.5s ease-in-out;
+  top: 38px;
+  transition: 0.5s linear;
 }
 .menu__card .checked-container .checked {
   width: 58px;
@@ -358,7 +357,7 @@ display: flex;
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s linear;
 }
 .menu__card .checked-container .fa-circle-check {
   color: #f6f6f6;
@@ -391,21 +390,20 @@ display: flex;
   animation: fade-out 0.5s linear;
 }
 .menu .menu__card:hover .content-subtitle {
-  max-width: 230px;
+  max-width: calc(100% - 95px);
 }
 .menu .menu__card:hover .checked-container {
   /*right: -22px;*/
   transform: translate(-58px, 0);
 }
 .menu .hidden-checkbox:checked .checked-container::before {
-  animation: fade-in 0.5s linear forwards;
+  animation: fade-in 0.5s linear;
 }
 .menu .hidden-checkbox:not(:checked) .checked-container::before {
-  animation: fade-out 0.5s linear backwards;
+  animation: fade-out 0.5s linear;
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .content-subtitle {
-  max-width: 230px;
-  transition: max-width 0.3s linear;
+  max-width: calc(100% - 95px);
 }
 .menu .hidden-checkbox:checked + .card-checked + .menu__card--content .checked-container {
   transform: translate(-58px, 0);
