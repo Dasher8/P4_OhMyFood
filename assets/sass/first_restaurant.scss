@@ -426,7 +426,7 @@ display: flex;
     }
 
     .card-checked {
-      width: 340px;
+      width: calc(100% - 20px);
       height: 69px;
       position: absolute;
       z-index: 800;
