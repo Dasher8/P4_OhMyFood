@@ -311,9 +311,14 @@ display: flex;
   cursor: pointer;
 }
 .menu__card--content .content-title {
+  max-width: calc(100% - 40px);
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: max-width 0.3s linear;
 }
 .menu__card--content .content-subtitle {
   max-width: calc(100% - 40px);
@@ -384,10 +389,14 @@ display: flex;
   display: none;
 }
 .menu .menu__card:hover .checked-container::before {
-  animation: fade-in 0.3s linear;
+  animation: fade-in;
 }
 .menu .menu__card:not(:hover) .checked-container::before {
-  animation: fade-out 0.3s linear;
+  animation: fade-out;
+}
+.menu .menu__card:hover .content-title {
+  max-width: calc(100% - 95px);
+  transition: max-width 0.3s linear;
 }
 .menu .menu__card:hover .content-subtitle {
   max-width: calc(100% - 95px);
