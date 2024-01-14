@@ -173,6 +173,464 @@ display: flex;
   }
 
   &__arrow {
+    padding-left: 15px;
+    font-size: large;
+    color: $icon-color-dark;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+    .fa-arrow-left {
+      color: #353535;
+    }
+
+    img {
+      width: 100%;
+      height: 30px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.main-photo img {
+  width: 100%;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: $background-color;
+  box-sizing: border-box;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  &__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 0 0;
+    gap: 35px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 24px;
+      font-family: Shrikhand;
+      font-weight: 400;
+    }
+
+    &--like {
+      .hidden-checkbox {
+        display: none;
+
+        &:checked + .card-like path {
+          fill: url(#like-gradient);
+          stroke: url(#like-gradient);
+        }
+      }
+
+      .card-like {
+        width: 22px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        path {
+          fill: transparent;
+          stroke-width: 2px;
+          stroke: black;
+          transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &__starters {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+  }
+
+  &__dishes {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+
+  &__desserts {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+  }
+
+  &__starters,
+  &__dishes,
+  &__desserts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0 10px 0;
+    opacity: 0;
+  }
+  &__subtitle {
+    width: calc(100% - 10px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 0 20px 0;
+    margin-left: 10px;
+    text-transform: uppercase;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  &__subtitle::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    top: 18px;
+    background: $tertiary-color;
+  }
+
+  &__card {
+    width: calc(100% - 10px);
+    height: 69px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+
+    &--content {
+      width: 100%;
+      padding: 13px 0 10px 10px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      z-index: 500;
+      overflow: hidden;
+      cursor: pointer;
+
+      .content-title {
+        max-width: calc(100% - 40px);
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: max-width 0.3s linear;
+      }
+
+      .content-subtitle {
+        max-width: calc(100% - 30px);
+        font-size: 13px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: max-width 0.3s linear;
+      }
+    }
+
+    .checked-container {
+      width: 116px;
+      height: 69px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: -80px;
+      top: 0;
+      box-sizing: border-box;
+      transition: 0.3s linear;
+
+      .content-price {
+        font-size: 13px;
+        font-weight: 700;
+        position: absolute;
+        right: 90px;
+        top: 38px;
+        transition: 0.3s linear;
+      }
+
+      .checked {
+        width: 58px;
+        height: 69px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        background: $tertiary-color;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: 0.3s linear;
+      }
+
+      .fa-circle-check {
+        color: $background-color;
+      }
+    }
+
+    .checked-container::before {
+      content: "";
+      width: 100px;
+      height: 69px;
+      display: flex;
+      position: absolute;
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      );
+      opacity: 0;
+      z-index: -2;
+      animation: 0.3s linear;
+    }
+
+    .card-checked {
+      width: calc(100% - 20px);
+      height: 69px;
+      position: absolute;
+      z-index: 800;
+      cursor: pointer;
+    }
+  }
+
+  .hidden-checkbox {
+    display: none;
+  }
+
+  .menu__card:hover .checked-container::before {
+    animation: fade-in;
+  }
+
+  .menu__card:not(:hover) .checked-container::before {
+    animation: fade-out;
+  }
+
+  .menu__card:hover .content-title {
+    max-width: calc(100% - 95px);
+  }
+
+  .menu__card:hover .content-subtitle {
+    max-width: calc(100% - 95px);
+  }
+
+  .menu__card:hover .checked-container {
+    /*right: -22px;*/
+    transform: translate(-58px, 0);
+  }
+
+  .hidden-checkbox:checked .checked-container::before {
+    animation: fade-in 0.3s linear;
+  }
+  .hidden-checkbox:not(:checked) .checked-container::before {
+    animation: fade-out 0.3s linear;
+  }
+
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content
+    .content-subtitle {
+    max-width: calc(100% - 95px);
+  }
+
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content .content-title {
+    max-width: calc(100% - 95px);
+  }
+
+  .hidden-checkbox:checked
+    + .card-checked
+    + .menu__card--content
+    .checked-container {
+    transform: translate(-58px, 0);
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  }
+
+  .order-button {
+    width: 186px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    margin: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: $button-gradient;
+    box-sizing: border-box;
+    transition: box-shadow 0.8s ease, background 0.8s ease;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      position: absolute;
+      opacity: 0;
+      box-sizing: border-box;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.15);
+      transition: 0.8s ease;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+      background: linear-gradient(-10deg, #9356dc -5.2%, #ff79da 110.74%);
+
+      &::before {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 186px;
+  background: $footer-color;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__list {
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 0 20px;
+
+    li {
+      padding-bottom: 10px;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .fa-utensils {
+      margin-right: 10px;
+      font-size: x-small;
+    }
+    .fa-handshake-angle {
+      margin-right: 9px;
+      font-size: xx-small;
+    }
+  }
+
+  .mentions,
+  .contact li {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+
+  .footer-logo p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Shrikhand";
+    color: white;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+@media (min-width: 355px) {
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.3s ease-in-out forwards;
+
+  &__arrow {
+    position: absolute;
+    left: 5px;
+  }
+
+  &__arrow {
     padding-left: 25px;
     font-size: large;
     color: $icon-color-dark;
@@ -607,7 +1065,7 @@ display: flex;
     padding: 20px;
   }
 }
-
+}
 @media (min-width: 768px) {
   .header {
     width: 100%;
