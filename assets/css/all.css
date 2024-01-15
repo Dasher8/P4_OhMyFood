@@ -168,14 +168,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .location .fa-location-dot {
   font-size: small;
-  margin-right: 15px;
   color: #353535;
+  position: absolute;
+  left: 15px;
 }
 .location__name {
-  width: 55%;
+  width: 100%;
   border: none;
   outline: none;
   color: #353535;
@@ -183,6 +185,7 @@
   font-weight: 500;
   background: none;
   padding: 0;
+  text-align: center;
 }
 
 .headline {
