@@ -23,7 +23,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   height: 100vh;
   background: rgba(255, 255, 255, 50);
   z-index: 1000;
-  animation: fadeOut 2s forwards 2s;
+  animation: lds-fadeOut 2s forwards 2s;
 }
 
 .lds-default {
@@ -35,7 +35,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   left: 50%;
   z-index: 2000;
   transform: translate(-50%, -50%);
-  animation: fadeOut 2s forwards 2s;
+  animation: lds-fadeOut 1.5s forwards 1.5s;
 }
 
 .lds-default div {
@@ -118,7 +118,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   }
 }
 
-@keyframes fadeOut {
+@keyframes lds-fadeOut {
   0% {
     opacity: 1;
   }
