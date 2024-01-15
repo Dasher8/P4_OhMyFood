@@ -16,301 +16,22 @@
 </head>
 
 <body>
-
-    <!--
-    <div> => position:relative;
-        <input>
-        <label></label> => position:absolute; width: 100%; height:50px; z-index: 800
-        <div> => width: 100%; height:50px; z-index:500
+    <div class="loader-background">
+        <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             <div></div>
         </div>
     </div>
--->
-
-    <!--
-<div class="menu__card"> => overflox:hidden
-    <div class="menu__card-content">
-        <div>
-        <h3 class="content-title">Filet de bœuf aux herbes</h3>
-        <p class="content-subtitle">Accompagné de sa ribambelle de légumes</p>
-
-    </div>
-    <div> =>absolute;  translateX
-            <p class="content-price">40€</p>
-            <span class="checked">
-                <i class="fa-solid fa-circle-check fa-lg"></i>
-            </span>
-        </div>
-    </div>
-</div> 
--->
-
-    <!--
-<input type="radio" name="entree"/>
-<input type="radio" name="entree"/>
-
-<input type="radio" name="plat" />
-<input type="radio" name="plat"/>
--->
-    <!--
-    <style>
-        .rectangle {
-            width: 300px;
-            height: 40px;
-            border: 1px solid red;
-            position: relative;
-            padding: 5px;
-            overflow: hidden;
-        }
-
-        .titi {
-            width: calc(100% - 50px);
-            height: 40px;
-            transition: ease-in-out .3s;
-        }
-
-        .titi .tutu {
-            width: 100%;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .toto {
-            width: 100px;
-            height: 40px;
-            background: green;
-            position: absolute;
-            top: 5px;
-            right: -50px;
-            transition: ease-in-out .3s;
-        }
-
-        .rectangle:hover .titi {
-            width: calc(100% - 100px);
-        }
-
-        .rectangle:hover .toto {
-            right: 0px;
-        }
-    </style>
-    <div class="rectangle">
-        <div class="titi">
-            <p class="tutu">lorem ipsum dolor set imae dolor</p>
-        </div>
-        <div class="toto"></div>
-    </div>
-
--->
-    <!--
-<style>
-    .rectangle {
-        width: 300px;
-        height: 40px;
-        border: 1px solid red;
-        position: relative;
-        padding: 5px;
-        overflow: hidden;
-    }
-
-    .titi {
-        width: calc(100% - 50px);
-        height: 40px;
-        transition: ease-in-out .3s;
-    }
-
-    .titi .tutu {
-        width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    .toto {
-        width: 100px;
-        height: 40px;
-        position: absolute;
-        top: 5px;
-        right: -50px;
-        transition: ease-in-out .3s;
-    }
-
-    .price {
-        width: 50px;
-        position: absolute;
-        left: 10px;
-        transition: ease-in-out .3s;
-    }
-
-    .care {
-        width: 50px;
-        height: 40px;
-        background: red;
-        position: absolute;
-        right: -50px;
-        transition: ease-in-out .3s;
-    }
-
-    .rectangle:hover .titi {
-        width: calc(100% - 100px);
-    }
-
-    .rectangle:hover .toto {
-        right: 0px;
-    }
-    .rectangle:hover .care {
-        right: 0px;
-    }
-
-</style>
-<div class="rectangle">
-    <div class="titi">
-        <p class="tutu">lorem ipsum dolor set imaeimi</p>
-    </div>
-    <div class="toto">
-        <span class="price">25€</span>
-        <span class="care"></span>
-    </div>
-</div>
-
-
-
-
-
-<div class="xxx">
-   
-    <div class="cube">
-        <div class="didi">
-            <h3 class="content-title">Filet de bœuf aux herbes</h3>
-            <p class="dudu">Accompagné de sa ribambelle de légum</p>
-        </div>
-        <div class="dodo">
-            <span class="pr">40€</span>
-            <span class="cr">
-                <i class="fa-solid fa-circle-check fa-lg"></i>
-            </span>
-        </div>
-    </div>
-</div>
-
-<style>
-
-    .xxx {
-    width: 340px;
-    height: 69px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background: white;
-    border-radius: 15px;
-    margin: 0px 0 10px 0px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-    }
-
-    .cube {
-      width: 100%;
-      height: 69px;
-      padding: 12px 0 15px 12px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 500;
-    }
-
-    .didi {
-    width: calc(100% - 58px); 
-    height: 69px;
-      transition: ease-in-out 0.5s;
-    }
-    
-    .didi .dudu {
-        width: 100%;
-        font-size: 15px;
-        font-weight: 300;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        
-      }
-
-      .dodo {
-        width: 116px;
-      height: 69px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      right: -80px;
-      top: 0;
-      box-sizing: border-box;
-      transition: ease-in-out 0.5s;
-      }
-
-      .pr {
-          width: 58px;
-        height: 69px;
-        font-size: 15px;
-        font-weight: 700;
-        position: absolute;
-        right: 60px;
-        top: 38px;
-        transition: ease-in-out 0.5s;
-      }
-
-      .cr {
-        width: 58px;
-        height: 69px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 15px;
-        background: red;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        transition: ease-in-out 0.5s;
-      }
-
-
-       .cube:hover .didi {
-        width: calc(100% - 116px);
-    }
-
-    .cube:hover .dodo {
-        right: 0px;
-    }
-    .cube:hover .cr {
-        right: 0px;
-    }
-</style>
-
--->
-<div class="loader-background">
-<div class="lds-default">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-</div>
-
-
     <div class="main-container">
         <header class="header">
             <a href="../index.html" class="header__arrow">
@@ -325,7 +46,6 @@
         <div class="main-photo">
             <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
         </div>
-
         <main class="menu">
             <div class="menu__content">
                 <div class="menu__title">
@@ -362,8 +82,8 @@
                         <label for="checkedCard-1" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Fricassée d'escargots</h3>
-                            <p class="content-subtitle">Au piment d'Espelette</p>
+                                <h3 class="content-title">Fricassée d'escargots</h3>
+                                <p class="content-subtitle">Au piment d'Espelette</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">25€</span>
@@ -373,14 +93,13 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="menu__card">
                         <input type="checkbox" id="checkedCard-2" class="hidden-checkbox">
                         <label for="checkedCard-2" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Foie gras de canard mi-cuit</h3>
-                            <p class="content-subtitle">Et ses copeaux de truffe noire</p>
+                                <h3 class="content-title">Foie gras de canard mi-cuit</h3>
+                                <p class="content-subtitle">Et ses copeaux de truffe noire</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">35€</span>
@@ -395,8 +114,8 @@
                         <label for="checkedCard-3" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Œuf au plat</h3>
-                            <p class="content-subtitle">Assaisonné à la truffe sur lit de caviar</p>
+                                <h3 class="content-title">Œuf au plat</h3>
+                                <p class="content-subtitle">Assaisonné à la truffe sur lit de caviar</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">20€</span>
@@ -426,14 +145,13 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="menu__card">
                         <input type="checkbox" id="checkedCard-5" class="hidden-checkbox">
                         <label for="checkedCard-5" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Parmentier de queue de bœuf</h3>
-                            <p class="content-subtitle">À la truffe noire sur sa purée de panais</p>
+                                <h3 class="content-title">Parmentier de queue de bœuf</h3>
+                                <p class="content-subtitle">À la truffe noire sur sa purée de panais</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">35€</span>
@@ -448,8 +166,8 @@
                         <label for="checkedCard-6" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Filet de turbot</h3>
-                            <p class="content-subtitle">Aux agrumes</p>
+                                <h3 class="content-title">Filet de turbot</h3>
+                                <p class="content-subtitle">Aux agrumes</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">44€</span>
@@ -467,8 +185,8 @@
                         <label for="checkedCard-7" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Paris-Brest</h3>
-                            <p class="content-subtitle">Revisité</p>
+                                <h3 class="content-title">Paris-Brest</h3>
+                                <p class="content-subtitle">Revisité</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">18€</span>
@@ -483,8 +201,8 @@
                         <label for="checkedCard-8" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Macaron au chocolat d'exception </h3>
-                            <p class="content-subtitle">Et glace à la vanille de Madagascar</p>
+                                <h3 class="content-title">Macaron au chocolat d'exception </h3>
+                                <p class="content-subtitle">Et glace à la vanille de Madagascar</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">22€</span>
@@ -499,8 +217,8 @@
                         <label for="checkedCard-9" class="card-checked"></label>
                         <div class="menu__card--content">
                             <div class="card-text">
-                            <h3 class="content-title">Mousse au chocolat</h3>
-                            <p class="content-subtitle">Au piment d'Espelette et à la truffe noire</p>
+                                <h3 class="content-title">Mousse au chocolat</h3>
+                                <p class="content-subtitle">Au piment d'Espelette et à la truffe noire</p>
                             </div>
                             <div class="checked-container">
                                 <span class="content-price">23€</span>
@@ -514,7 +232,6 @@
                 <button type="button" class="order-button">Commander</button>
             </div>
         </main>
-
         <footer class="footer">
             <div class="footer__content">
                 <a href="#" class="footer-logo">
@@ -536,7 +253,6 @@
                 </ul>
             </div>
         </footer>
-
     </div>
 </body>
 
