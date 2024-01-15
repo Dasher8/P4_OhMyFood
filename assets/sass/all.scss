@@ -210,7 +210,7 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
 
   &__subtitle {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
   }
 
@@ -574,6 +574,14 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
     font-family: "Shrikhand";
     color: white;
     padding: 20px;
+  }
+}
+
+@media (min-width: 364px) {
+  .headline {
+    &__subtitle {
+      font-size: 18px;
+    }
   }
 }
 
