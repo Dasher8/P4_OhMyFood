@@ -1,9 +1,3 @@
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-}
-
-/*LOADER*/
 .loader-background {
   display: flex;
   justify-content: center;
@@ -128,7 +122,11 @@
     visibility: hidden;
   }
 }
-/*LOADER*/
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
 /*CONTENT LOADING*/
 @keyframes fadeIn {
   from {

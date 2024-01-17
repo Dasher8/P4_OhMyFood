@@ -1,9 +1,3 @@
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-}
-
-/*LOADER*/
 .loader-background {
   display: flex;
   justify-content: center;
@@ -15,7 +9,7 @@
   height: 100vh;
   background: rgb(255, 255, 255);
   z-index: 1000;
-  animation: lds-fadeOut 2s forwards 2s;
+  animation: lds-fadeOut 1.5s forwards 1.5s;
 }
 
 .lds-default {
@@ -128,7 +122,11 @@
     visibility: hidden;
   }
 }
-/*LOADER*/
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
 .header {
   display: flex;
   align-items: center;
