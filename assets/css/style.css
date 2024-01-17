@@ -147,6 +147,7 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   position: relative;
+  z-index: 1;
 }
 .image-container img {
   width: 100%;
