@@ -176,8 +176,8 @@ $button-gradient: linear-gradient(-10deg, #9356dc -11.44%, #ff79da 123.93%);
   .fa-location-dot {
     font-size: small;
     color: #353535;
-    position: absolute;
-    left: 15px;
+    position: relative;
+    left: 30px;
   }
 
   &__name {

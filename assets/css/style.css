@@ -174,8 +174,8 @@
 .location .fa-location-dot {
   font-size: small;
   color: #353535;
-  position: absolute;
-  left: 15px;
+  position: relative;
+  left: 30px;
 }
 .location__name {
   width: 100%;
